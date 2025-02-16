@@ -32,10 +32,10 @@
         <button onclick="testSpeed()">Start Test</button>
     </div><script>
     function testSpeed() {
-        const fileSize = 5 * 1024 * 1024; // 5MB file
+        const fileSize = 1 * 1024 * 1024; // 1MB file size assumption
         const startTime = new Date().getTime();
         
-        fetch("https://speed.hetzner.de/5MB.bin")
+        fetch("https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png", { cache: "no-store" })
             .then(response => response.blob())
             .then(blob => {
                 const endTime = new Date().getTime();
